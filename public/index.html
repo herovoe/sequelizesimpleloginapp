@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+  <head>
+    <title>A simple login app with Node</title>
+    <meta charset="utf-8"/>
+
+    <script src="../socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
+    <style>
+      body{color:white;background-color:darkblue;}
+    </style>
+  </head>
+
+
+  <body>
+    <div class="container">
+      <form class="form-signin" action="/" method="post" id="login-frm" name="login-frm">
+        <h2 class="form-signin-heading" align="center">login and don't make us sad :*</h2>
+        <label for="userName" class="sr-only">Username:</label>
+        <input type="text" id="userName" name="userName" class="form-control" placeholder="Username" required/>
+        <br>
+        <label for="userPassword" class="sr-only">Password:</label>
+        <input type="password" id="userPassword" name="userPassword" class="form-control" placeholder="Password" required/>
+        <br>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+      <form class="form-signup" action="/signup" method="post" id="signup-frm" name="signup-frm">
+        <h2 class="form-signin-heading" align="center">or sign up and start fantasy ;)</h2>
+        <label for="visitorName" class="sr-only">Username:</label>
+        <input type="text" id="visitorName" name="visitorName" class="form-control" placeholder="Username" required/>
+        <br>
+        <label for="visitorPassword" class="sr-only">Password:</label>
+        <input type="password" id="visitorPassword" name="visitorPassword" class="form-control" placeholder="Password" required/>
+        <br>
+        <button class="btn btn-lg btn-success btn-block" type="submit">Sign up</button>
+      </form>
+    </div>
+
+  </body>
+
+
+</html>
